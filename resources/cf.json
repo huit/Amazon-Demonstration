@@ -31,7 +31,7 @@
     "InstanceType" : {
       "Description" : "WebServer EC2 instance type",
       "Type" : "String",
-      "Default" : "m1.medium",
+      "Default" : "m1.small",
       "ConstraintDescription" : "must be a valid EC2 instance type."
     },
 
@@ -124,10 +124,10 @@
     },
 
     "WebServerCapacity": {
-      "Default": "3",
+      "Default": "1",
       "Description" : "The initial number of WebServer instances",
       "Type": "Number",
-      "MinValue": "2",
+      "MinValue": "1",
       "MaxValue": "5",
       "ConstraintDescription" : "must be between 1 and 5 EC2 instances."
     },
