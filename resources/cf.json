@@ -271,7 +271,7 @@
         "AvailabilityZones" : [ "us-east-1a","us-east-1d" ],
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig1" },
         "MinSize" : "1",
-        "MaxSize" : "5",
+        "MaxSize" : "1",
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "LoadBalancerNames" : [ { "Ref" : "ElasticLoadBalancer" } ],
         "Tags" : [
