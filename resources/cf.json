@@ -128,8 +128,8 @@
       "Description" : "The initial number of WebServer instances",
       "Type": "Number",
       "MinValue": "1",
-      "MaxValue": "1",
-      "ConstraintDescription" : "must be between 1 and 5 EC2 instances."
+      "MaxValue": "5",
+      "ConstraintDescription" : "Initially set to 1 instance to demo current Harvard Infrastructure"
     },
 
      "WebServerCapacitySingle": {
@@ -271,7 +271,7 @@
         "AvailabilityZones" : [ "us-east-1a","us-east-1d" ],
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig1" },
         "MinSize" : "1",
-        "MaxSize" : "1",
+        "MaxSize" : "5",
         "DesiredCapacity" : { "Ref" : "WebServerCapacity" },
         "LoadBalancerNames" : [ { "Ref" : "ElasticLoadBalancer" } ],
         "Tags" : [
