@@ -195,6 +195,7 @@
 
     "S3Bucket" : {
       "Type" : "AWS::S3::Bucket",
+      "Description" : "Harvard",
       "DeletionPolicy" : "Retain"
     },
 
@@ -218,6 +219,7 @@
 
     "S3User" : {
       "Type" : "AWS::IAM::User",
+      "Description" : "Harvard",
       "Properties" : {
         "Path": "/",
         "Policies": [{
@@ -240,6 +242,7 @@
 
     "ElasticLoadBalancer" : {
       "Type" : "AWS::ElasticLoadBalancing::LoadBalancer",
+      "Description" : "Harvard",
       "Metadata" : {
         "Comment" : "Configure the Load Balancer with a simple health check and cookie-based stickiness"
       },
@@ -267,6 +270,7 @@
 
     "WebServerGroup1" : {
       "Type" : "AWS::AutoScaling::AutoScalingGroup",
+      "Description" : "Harvard",
       "Properties" : {
         "AvailabilityZones" : [ "us-east-1a","us-east-1d" ],
         "LaunchConfigurationName" : { "Ref" : "LaunchConfig1" },
