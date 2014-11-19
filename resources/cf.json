@@ -195,7 +195,6 @@
 
     "S3Bucket" : {
       "Type" : "AWS::S3::Bucket",
-      "Description" : "Harvard",
       "DeletionPolicy" : "Retain"
     },
 
@@ -219,7 +218,6 @@
 
     "S3User" : {
       "Type" : "AWS::IAM::User",
-      "Description" : "Harvard",
       "Properties" : {
         "Path": "/",
         "Policies": [{
