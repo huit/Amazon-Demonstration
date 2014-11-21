@@ -129,7 +129,7 @@
       "Type": "Number",
       "MinValue": "1",
       "MaxValue": "1",
-      "ConstraintDescription" : "Demo Initially set to 1 instance to demo current Infrastructure"
+      "ConstraintDescription" : "Demo Initially set 1 instance to demo current Infrastructure"
     },
 
      "WebServerCapacitySingle": {
